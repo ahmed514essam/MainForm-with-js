@@ -1,0 +1,274 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(./imges/istockphoto-1142424263-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.steps {
+    width: 30%;
+} 
+
+
+
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .ditwos {
+    width: 40%;
+    text-align: center;
+  }
+
+  .ditwos .container {
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 100px;
+ 
+    transform: translate(1% , 1%);
+    -webkit-transform: translate(1% , 1%);
+    -moz-transform: translate(1% , 1%);
+    -ms-transform: translate(1% , 1%);
+    -o-transform: translate(1% , 1%);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.container .toggle {
+  position: relative;
+ 
+/* top: 25px; */
+  width: 70px;
+  height: 40px;
+  background: #444;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.container .toggle .toggle-button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+ 
+ .container .text{
+
+  left: 5px;
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+ .container .toggle.active {
+  background: rgb(103, 103, 255);
+  }
+  .container .toggle.active .toggle-button {
+  left: 35px;
+  }
+
+
+.s1 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+   gap: 30px;
+    align-items: center;
+    justify-content:space-between;
+    padding-bottom: 30px;
+    padding-left: 30px;
+} 
+.s1 div {
+    line-height: 5px;
+
+}
+.s1 div p {
+    font-weight: 540;
+    color: rgb(63, 63, 63);
+}
+.s1 div h3 {
+
+    color: rgb(49, 49, 49);
+}
+.s1 button {
+    padding: 10px 10px ;
+    border: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  
+}
+.smallContent {
+    border: 1px solid black;
+    padding: 10px 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+justify-content: space-around;
+}
+
+
+
+
+@media (min-width:750px) and (max-width:900px) {
+    .steps {
+        width: 50%;
+    } 
+}
+
+@media (max-width:750px) {
+    
+    body { 
+        flex-direction: column;
+        
+    }
+    .steps {
+        width: 100%;
+    } 
+    .s1 {
+        width: 50%;
+        justify-content:space-around;
+    } 
+ 
+
+/* ===============================================================
+=============================================================== */
+
+
+.ditwos .container {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 1px;
+
+  transform: translate(1% , 1%);
+  -webkit-transform: translate(1% , 1%);
+  -moz-transform: translate(1% , 1%);
+  -ms-transform: translate(1% , 1%);
+  -o-transform: translate(1% , 1%);
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+.container .toggle {
+position: relative;
+
+/* top: 25px; */
+width: 70px;
+height: 40px;
+background: #444;
+border-radius: 30px;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+-ms-border-radius: 30px;
+-o-border-radius: 30px;
+transition: 0.3s;
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-ms-transition: 0.3s;
+-o-transition: 0.3s;
+}
+.container .toggle .toggle-button {
+position: absolute;
+top: 5px;
+left: 5px;
+
+width: 30px;
+height: 30px;
+background: white;
+border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+cursor: pointer;
+transition: 0.3s;
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-ms-transition: 0.3s;
+-o-transition: 0.3s;
+}
+
+.container .text{
+
+left: 5px;
+font-size: 25px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container .toggle.active {
+background: rgb(103, 103, 255);
+}
+.container .toggle.active .toggle-button {
+left: 35px;
+}
+
+
+/* ==============================================================
+============================================================= */
+
+
+.ditwos {
+width: 100%;
+}
+
+
+}
+@media (max-width:391px) {
+    
+   
+    .steps {
+        width: 100%;
+    } 
+    .s1 {
+        width: 70%;
+        
+    } 
+
+    .smallContent {
+      border: 1px solid black;
+      padding: 6px 5px;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+  }
+
+}
