@@ -1,0 +1,131 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(./imges/istockphoto-1142424263-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.steps {
+    width: 30%;
+} 
+.s1 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+   gap: 30px;
+    align-items: center;
+    justify-content:space-between;
+    padding-bottom: 30px;
+    padding-left: 30px;
+} 
+.s1 div {
+    line-height: 5px;
+
+}
+.s1 div p {
+    font-weight: 540;
+    color: rgb(63, 63, 63);
+}
+.s1 div h3 {
+
+    color: rgb(49, 49, 49);
+}
+.s1 button {
+    padding: 10px 10px ;
+    border: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  
+}
+.smallContent {
+    border: 1px solid black;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.smallContent h2 {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ppri {
+    padding-right: 10px;
+    color: rgb(59, 59, 255);
+}
+.diwords {
+   line-height: 10px; 
+}
+.act {
+    border: 2px solid rgb(32, 32, 253);
+}
+.jhgjgjhj {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.jhgjgjhj button {
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 1em;
+    background-color: rgb(24, 24, 94);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.jhgjgjhj a {
+
+    font-weight: 600;
+    text-decoration: none;
+    color: slategrey;
+}
+@media (min-width:750px) and (max-width:900px) {
+    .steps {
+        width: 50%;
+    } 
+}
+
+@media (max-width:750px) {
+    
+    body { 
+        flex-direction: column;
+        
+    }
+    .steps {
+        width: 100%;
+    } 
+    .s1 {
+        width: 50%;
+        justify-content:space-around;
+    } 
+    .jhgjgjhj {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 20px;
+    }
+}
