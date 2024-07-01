@@ -1,0 +1,153 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(./imges/istockphoto-1142424263-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.steps {
+    width: 30%;
+} 
+.s1 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+   gap: 30px;
+    align-items: center;
+    justify-content:space-between;
+    padding-bottom: 30px;
+    padding-left: 30px;
+} 
+.s1 div {
+    line-height: 5px;
+
+}
+.s1 div p {
+    font-weight: 540;
+    color: rgb(63, 63, 63);
+}
+.s1 div h3 {
+
+    color: rgb(49, 49, 49);
+}
+.s1 button {
+    padding: 10px 10px ;
+    border: 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  
+}
+.contentm {
+
+}
+.divNames {
+          border: 1px solid rgb(104, 104, 104);
+          width: 90%;
+          height: 50px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          border-radius:10px ;
+          -webkit-border-radius:10px ;
+          -moz-border-radius:10px ;
+          -ms-border-radius:10px ;
+          -o-border-radius:10px ;
+          margin-bottom: 10px;
+}
+.ConfirmPlane {
+    border: 1px solid rgb(104, 104, 104);
+    width: 90%;
+    height: 50px;
+    display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+border-radius:10px ;
+-webkit-border-radius:10px ;
+-moz-border-radius:10px ;
+-ms-border-radius:10px ;
+-o-border-radius:10px ;
+margin-bottom: 10px;
+}
+.ConfirmPick {
+    border: 1px solid rgb(104, 104, 104);
+    width: 90%;
+    height: 50px;
+    display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+border-radius:10px ;
+-webkit-border-radius:10px ;
+-moz-border-radius:10px ;
+-ms-border-radius:10px ;
+-o-border-radius:10px ;
+margin-bottom: 10px;
+}
+.totaPrices {
+    border: 1px solid rgb(104, 104, 104);
+    width: 90%;
+    height: 50px;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnsAndBack {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.btnsAndBack button {
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(17, 17, 88);
+    color: white;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.btnsAndBack a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: rgb(88, 88, 88);
+}
+@media (min-width:750px) and (max-width:900px) {
+    .steps {
+        width: 50%;
+    } 
+}
+
+@media (max-width:750px) {
+    
+    body { 
+        flex-direction: column;
+        
+    }
+    .steps {
+        width: 100%;
+    } 
+    .s1 {
+        width: 50%;
+        justify-content:space-around;
+    } }
