@@ -17,7 +17,13 @@ let onlineY = 10;
 let largeY = 20;
 let customY = 20;
 
+let Pag =  document.getElementById("onebttn")
 
+if (document.title === "Pick add-Ons") {
+Pag.classList.add("selectPage");
+}else {
+
+}
 
 let pprie = localStorage.getItem("price");
 
@@ -35,35 +41,32 @@ paraCustom.innerHTML = customMo + "mo" ;
     }
 
 
+
+
+
 function openOnline() {
 divOnline.classList.toggle("act")
 sessionStorage.clear() ;
 if (pprie === "mo") {
-    sessionStorage.setItem("lastname", onlineMo);
-    sessionStorage.setItem("sName", "Online Service");
+    sessionStorage.setItem("onlineMo", onlineMo);
+    sessionStorage.setItem("onlineName", "Online Service");
 }else {
-    sessionStorage.setItem("lastname", onlineY);
-    sessionStorage.setItem("sName", "Online Service");
+    sessionStorage.setItem("onlineYr", onlineY);
+    sessionStorage.setItem("onlineName", "Online Service");
 }
-
 }
-
-
-
-
-
 
 function openLarg() {
     divLarge.classList.toggle("act")
     sessionStorage.clear() ;
     if (pprie === "mo") {
-        sessionStorage.setItem("lastname", largeMo);
-        sessionStorage.setItem("sName", "Larger Storger");
+        sessionStorage.setItem("largeMo", largeMo);
+        sessionStorage.setItem("largName", "Larger Storger");
         
     }else {
-        sessionStorage.setItem("lastname", largeY);
+        sessionStorage.setItem("LargeYr", largeY);
         
-        sessionStorage.setItem("sName", "Larger Storger");
+        sessionStorage.setItem("largName", "Larger Storger");
     }
 
 
@@ -77,11 +80,11 @@ function openCustom() {
     divCustom.classList.toggle("act")
     sessionStorage.clear() ;
     if (pprie === "mo") {
-        sessionStorage.setItem("lastname", customMo);
-        sessionStorage.setItem("sName", "Customizable Profile");
+        sessionStorage.setItem("customerMo", customMo);
+        sessionStorage.setItem("custName", "Customizable Profile");
     }else {
-        sessionStorage.setItem("lastname", customY);
-        sessionStorage.setItem("sName", "Customizable Profile");
+        sessionStorage.setItem("customerYr", customY);
+        sessionStorage.setItem("custName", "Customizable Profile");
     }
 }
 

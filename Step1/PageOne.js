@@ -2,6 +2,16 @@ let Name = document.querySelector(".name");
 let Email = document.querySelector(".email");
 let Phone = document.querySelector(".phone");
 let Form = document.querySelector("form");
+let Pag =  document.getElementById("onebttn")
+
+if (document.title === "Personal Info") {
+Pag.classList.add("selectPage");
+}else {
+
+}
+
+
+
 
 Form.onsubmit = function () {
   let nameValue = Name.value;
@@ -17,6 +27,7 @@ Form.onsubmit = function () {
   let validEmail = emailRe.test(emailValue);
   let validPhone = phoneRe.test(phoneValue);
 
+
   if (validName === false) {
     Name.classList.add("err");
     return false;
@@ -31,7 +42,8 @@ Form.onsubmit = function () {
     Email.classList.remove("err");
     Phone.classList.remove("err");
     window.location.href = "../Step2/pageTwo.html";
-    localStorage.setItem("clint" , nameValue);
+    
     return false;
+    
   }
 };

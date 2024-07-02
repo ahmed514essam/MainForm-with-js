@@ -13,6 +13,13 @@ let moAdv = 12;
 let moAcr = 9;
 let moPr = 15;
 
+let Pag =  document.getElementById("onebttn")
+
+if (document.title === "Your Plane") {
+Pag.classList.add("selectPage");
+}else {
+
+}
 
 function animationToggle() {
   Toggle.classList.toggle("active");

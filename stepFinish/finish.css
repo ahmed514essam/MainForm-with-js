@@ -5,27 +5,17 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
-.err {
-    border: 2px solid red;
-}
 .steps {
-    width: 30%;
+    width: 40%;
 } 
-h1 {
-font-weight: 700;
-font-size: 2.5em;
-}
-.paramain {
-    font-weight: 700;
-    color: rgb(95, 95, 95);
-}
 .s1 {
     width: 60%;
     display: flex;
     flex-direction: row;
-   gap: 30px;
+   gap: 10px;
     align-items: center;
     justify-content:space-between;
     padding-bottom: 30px;
@@ -53,60 +43,24 @@ font-size: 2.5em;
     -o-border-radius: 50%;
   
 }
-.fodiv {
-    width: 70%;
-    display: flex;
-    justify-content: center;
- 
-}
-.fosub {
-    width: 50%;
-}
-form {
-width: 100%;
-
-margin-top: 30px;
-}
-.divIput {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-label {
-    font-weight: 550;
-    padding-bottom: 5px;
-}
-input {
-    height: 30px;
-    border: 0;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-}
-.bttnn {
-    width: 100%;
-    direction: rtl;
-}
-.btnmain {
-    padding: 10px 20px;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border: none;
-    font-weight: 600;
-    background-color: black;
-    color: white;
-    margin-top: 30px;
-}
 .selectPage {
     background-color: rgb(30, 30, 94);
     color: white;
 }
-
+.headsuces {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.headsuces h1 {
+    color: rgb(16, 16, 92);
+    font-weight: 600;
+}
+.headsuces p {
+    color: rgb(99, 99, 99);
+}
 @media (min-width:750px) and (max-width:900px) {
     .steps {
         width: 50%;
@@ -125,22 +79,4 @@ input {
     .s1 {
         width: 50%;
         justify-content:space-around;
-    } 
-    .fodiv {
-        width: 100%;
-    }
-    .fosub {
-        width: 90%;
-    }
-}
-@media (max-width:391px) {
-    
-   
-    .steps {
-        width: 100%;
-    } 
-    .s1 {
-        width: 70%;
-        
-    } 
-}
+    } }
