@@ -41,7 +41,7 @@ Form.onsubmit = function () {
     Name.classList.remove("err");
     Email.classList.remove("err");
     Phone.classList.remove("err");
-    window.location.href = "../Step2/pageTwo.html";
+    window.location.href = "./Step2/pageTwo.html";
     
     return false;
     
